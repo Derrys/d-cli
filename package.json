@@ -9,9 +9,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "derry.song",
+  "author": "Derry Song",
   "email": "236133362@qq.com",
-  "license": "ISC",
+  "keywords": [
+    "d",
+    "d-cli",
+    "cli"
+  ],
+  "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
     "commander": "^7.1.0",
