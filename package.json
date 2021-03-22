@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "derrys cli for init frontend project",
   "bin": {
-    "sn-cli": "index.js"
+    "d-cli": "index.js"
   },
   "main": "index.js",
   "scripts": {
