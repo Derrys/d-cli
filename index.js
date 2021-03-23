@@ -116,12 +116,9 @@ function doShellJob(shell, tips) {
 !(async function () {
   const { name, answers } = await startCommand();
   await downloadProject(name);
-  const meta = {
-    serviceName: answers.serviceName
-  };
   const spinner = ora("Set template files...");
   spinner.start();
-  await Promise.all(TEMPLATEFILES.map((i) => setTemplate(path.join(__dirname, name, i), meta))).then(() => {
+  await Promise.all(TEMPLATEFILES.map((i) => setTemplate(path.join(__dirname, name, i), answers))).then(() => {
     spinner.succeed();
   }).catch(e => {
     console.log(symbols.error, chalk.red(e));
